@@ -837,10 +837,30 @@ footer .copyright form button:hover {
 
 
 @media (max-width: 1024px){
-  .hero {
-    padding: 15vh 5vw;
+  body {
+    position: relative;
+    width: 100vw;
+
   }
 
+header {
+  width: 100vw !important;
+}
+
+  header #header-container {
+    width: 100vw !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  header nav {
+    display: none !important;
+  }
+
+
+  .hero {
+    padding: 20vh 5vw;
+  }
 
   .hero .container {
     flex-direction: column;
@@ -851,6 +871,12 @@ footer .copyright form button:hover {
   .hero .container .title {
     font-size: 3rem !important;
   }
+
+  .hero .container .subtitle2 {
+    font-size: 1rem !important;
+    margin-bottom: 24px !important;
+  }
+
 
 
   .product {
