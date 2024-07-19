@@ -901,6 +901,10 @@ header {
 
   }
 
+  form .form-header {
+    padding-bottom: 0 !important;
+  }
+
   form .identity {
     display: flex !important;
     width: 100%;
