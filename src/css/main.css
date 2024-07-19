@@ -934,13 +934,29 @@ header {
     width: 90% !important;
   }
 
+  .product {
+     padding-left: 5vw;
+    padding-right: 5vw;
+  }
 
   .product .header {
     display: flex;
     flex-direction: column;
     text-align: unset;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    width: calc(100% - 10vw);
+    align-self: flex-start;
+    
+  }
+
+.toggleable_tabs {
+  width: calc(100% - 10vw);
+  align-self: flex-start;
+}
+
+  .tabbox {
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0 !important;
   }
 
 }
