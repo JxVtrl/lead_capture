@@ -838,13 +838,18 @@ footer .copyright form button:hover {
 
 @media (max-width: 1024px){
   .hero {
-    padding: 16vh 5vw;
+    padding: 15vh 5vw;
   }
 
 
   .hero .container {
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+  }
+
+  .hero .container .title {
+    font-size: 3rem !important;
   }
 
 
