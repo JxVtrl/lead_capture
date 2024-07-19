@@ -1,0 +1,18 @@
+@use 'modules/mixin' as mixin;
+@use 'modules/color' as color;
+@use 'modules/header' as header;
+@use 'modules/hero' as hero;
+@use 'modules/product' as product;
+@use 'modules/features' as features;
+@use 'modules/features-cont' as features-cont;
+@use 'modules/whyus' as whyus;
+@use 'modules/testi' as testi;
+@use 'modules/faq' as faq;
+@use 'modules/cta' as cta;
+@use 'modules/footer' as footer;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
