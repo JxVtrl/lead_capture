@@ -928,10 +928,10 @@ footer .copyright form button:hover {
     width: 90% !important;
   }
 
-  .product {
+  /* .product {
     padding-left: 5vw;
     padding-right: 5vw;
-  }
+  } */
 
   .product .header {
     display: flex;
@@ -990,13 +990,83 @@ footer .copyright form button:hover {
 
   .features {
     height: fit-content !important;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    /* padding-left: 5vw;
+    padding-right: 5vw; */
   }
 
   .features .container {
     padding-inline: unset !important;
     display: flex;
+    flex-direction: column;
+  }
+
+
+  .features-cont {
+    padding-inline: unset !important;
+    display: flex;
+    flex-direction: column
+  }
+
+  .features-cont .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .features-cont .left img {
+    aspect-ratio: 3.18 !important;
+    height: unset !important;
+    width: 100%;
+
+  }
+
+  .whyus {
+    margin-inline: unset !important;
+  }
+
+  .testi {
+    padding-inline: unset !important;
+    margin-block: unset !important;
+  }
+
+  .testi .header .logos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testi .header .logos img {
+    width: 100% !important;
+    height: unset !important;
+  }
+
+  .faq {
+padding-inline: unset !important;
+padding-block: unset !important;
+  }
+
+  .faq .faqbox ul {
+    height: fit-content !important;
+    width: 100% !important;
+  }
+
+  .cta {
+    margin-top: unset !important;
+    height: fit-content !important;
+    padding-inline: unset !important;
+  }
+
+  .cta .box {
+    height: unset !important; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    padding-inline: unset !important;
+    padding-block:unset !important;
+  }
+
+  footer .copyright {
     flex-direction: column;
   }
 }
