@@ -35,7 +35,8 @@ header #header-container nav li a {
   border-radius: 5px;
   transition-duration: 0.3s;
 }
-header #header-container nav li a:hover, header #header-container nav li a.invert:hover {
+header #header-container nav li a:hover,
+header #header-container nav li a.invert:hover {
   color: #1f6df1;
   background-color: rgba(240, 247, 254, 0.05);
 }
@@ -161,7 +162,7 @@ header.header-hidden {
   flex-wrap: wrap;
   row-gap: 20px;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 .hero .container .right form .identity .input input {
   border: 1px solid rgba(128, 128, 128, 0.15);
@@ -188,7 +189,8 @@ header.header-hidden {
   border-radius: 5px;
   width: 100%;
   resize: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1.1rem;
   box-sizing: border-box;
   margin-top: 10px;
@@ -830,22 +832,19 @@ footer .copyright form button:hover {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}/*# sourceMappingURL=main.css.map */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} /*# sourceMappingURL=main.css.map */
 
-
-
-
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   body {
     position: relative;
     width: 100vw;
-
   }
 
-header {
-  width: 100vw !important;
-}
+  header {
+    width: 100vw !important;
+  }
 
   header #header-container {
     width: 100vw !important;
@@ -856,7 +855,6 @@ header {
   header nav {
     display: none !important;
   }
-
 
   main .hero {
     padding: 98px 5vw;
@@ -887,8 +885,6 @@ header {
     margin-bottom: 24px !important;
   }
 
-
-
   .product {
     width: 100%;
     height: 100%;
@@ -908,7 +904,6 @@ header {
   form {
     padding: 0 !important;
     padding: 5vh 5vw !important;
-
   }
 
   form .form-header {
@@ -920,9 +915,8 @@ header {
     width: 100%;
     position: relative;
     overflow: hidden;
-
   }
-  
+
   form .identity .input {
     width: 100% !important;
     display: flex;
@@ -935,7 +929,7 @@ header {
   }
 
   .product {
-     padding-left: 5vw;
+    padding-left: 5vw;
     padding-right: 5vw;
   }
 
@@ -945,13 +939,12 @@ header {
     text-align: unset;
     width: calc(100% - 10vw);
     align-self: flex-start;
-    
   }
 
-.toggleable_tabs {
-  width: calc(100% - 10vw);
-  align-self: flex-start;
-}
+  .toggleable_tabs {
+    width: calc(100% - 10vw);
+    align-self: flex-start;
+  }
 
   .tabbox {
     flex-direction: column;
@@ -989,10 +982,21 @@ header {
     flex-direction: column;
   }
 
-   .contentbox .card .images img {
+  .contentbox .card .images img {
     height: unset !important;
     width: 100%;
     aspect-ratio: 2 !important;
-   }
+  }
 
+  .features {
+    height: fit-content !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .features .container {
+    padding-inline: unset !important;
+    display: flex;
+    flex-direction: column;
+  }
 }
