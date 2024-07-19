@@ -852,8 +852,16 @@ footer .copyright form button:hover {
     width: 100%;
     height: 100%;
     padding-top: 5vh;
+  }
 
+  .contentbox .content {
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 
+  .contentbox .content .card {
+    width: 100% !important;
   }
 
 
