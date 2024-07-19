@@ -858,14 +858,16 @@ header {
   }
 
 
-  .hero {
-    padding: 30vh 5vw;
+  main .hero {
+    padding: 98px 5vw;
+    height: fit-content !important;
   }
 
   .hero .container {
     flex-direction: column;
     gap: 24px;
     width: 100%;
+    padding-top: 0px !important;
   }
 
   .hero .container .title {
