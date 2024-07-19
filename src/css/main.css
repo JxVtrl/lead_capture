@@ -959,4 +959,40 @@ header {
     margin: 15px 0 !important;
   }
 
+  .contentbox .content {
+    padding-left: unset !important;
+    padding-right: unset !important;
+  }
+
+  .contentbox .card {
+    height: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .contentbox .title {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: unset !important;
+  }
+
+  .contentbox .card p {
+    line-height: unset !important;
+    margin: unset !important;
+    font-size: 16px;
+  }
+
+  .contentbox .card .images {
+    flex-direction: column;
+  }
+
+   .contentbox .card .images img {
+    height: unset !important;
+    width: 100%;
+    aspect-ratio: 2 !important;
+   }
+
 }
