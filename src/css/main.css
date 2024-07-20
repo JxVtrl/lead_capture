@@ -435,14 +435,14 @@ header {
   box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   top: -10vh;
-  left: -20vw;
+  left: -12vw;
 }
 .features .container .right img:nth-child(3) {
   width: 4vw;
   box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   top: -30vh;
-  left: -25vw;
+  left: -17vw;
 }
 
 .features-cont {
