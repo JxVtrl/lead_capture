@@ -882,7 +882,7 @@ article {
   }
 
   .product {
-    width: 100%;
+    width: unset !important;
     height: 100%;
     padding-top: 5vh;
   }
@@ -922,21 +922,16 @@ article {
     width: 90% !important;
   }
 
-  .product {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
   .product .header {
     display: flex;
     flex-direction: column;
     text-align: unset;
-    width: calc(100% - 10vw);
+    width: 100%;
     align-self: flex-start;
   }
 
   .toggleable_tabs {
-    width: calc(100% - 10vw);
+    width: 100%;
     align-self: flex-start;
   }
 
