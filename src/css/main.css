@@ -62,7 +62,7 @@ header {
 #header-container .other button {
   margin: 0;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1920 - 1024)));
   border: none;
   border-radius: 5px;
   background-color: #4285f4;
@@ -76,7 +76,7 @@ header {
 }
 
 #header-container .other .contact {
-  font-size: 1rem;
+  font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 #header-container a {
@@ -118,6 +118,11 @@ header {
   gap: 5vw;
 }
 
+.hero .container section {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero .container .left .subtitle1 {
   background-color: rgba(128, 128, 128, 0.15);
   border: 1px solid rgba(128, 128, 128, 0.15);
@@ -128,7 +133,7 @@ header {
 }
 
 .hero .container .left .title {
-  font-size: 4.5rem;
+  font-size: calc(32px + (64 - 32) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .hero .container .left .title span {
@@ -138,7 +143,7 @@ header {
 .hero .container .left .subtitle2 {
   margin: 20px 0 50px;
   line-height: 1.6;
-  font-size: 1.2rem;
+  font-size: calc(16px + (24 - 16) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .hero .container .left .trustpilot img {
@@ -167,7 +172,7 @@ header {
 }
 
 .hero .container .right form .form-header h3 {
-  font-size: 1.4rem;
+  font-size: calc(16px + (24 - 16) * ((100vw - 1024px) / (1920 - 1024)));
   margin-bottom: 10px;
 }
 
@@ -187,7 +192,7 @@ header {
   background-color: #f3f4f6;
   padding: 15px;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: calc(14px + (18 - 14) * ((100vw - 1024px) / (1920 - 1024)));
   margin-top: 10px;
 }
 
@@ -206,7 +211,7 @@ header {
   border-radius: 5px;
   width: 100%;
   resize: none;
-  font-size: 1.1rem;
+  font-size: calc(14px + (18 - 14) * ((100vw - 1024px) / (1920 - 1024)));
   margin-top: 10px;
   box-sizing: border-box;
 }
@@ -222,7 +227,9 @@ header {
 .hero .container .right form button {
   margin-top: auto;
   font-weight: bold;
-  font-size: 1.2rem;
+
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   border: none;
   border-radius: 5px;
   background-color: #4285f4;
@@ -258,7 +265,7 @@ header {
 }
 
 .product .header h2 {
-  font-size: 3rem; /* Ajuste em relação à viewport */
+  font-size: calc(32px + (48 - 32) * ((100vw - 1024px) / (1920 - 1024)));
   margin: 2rem 0; /* Usando rem para margem */
 }
 
@@ -269,7 +276,7 @@ header {
 .product .header p {
   color: #737373;
   line-height: 1.8;
-  font-size: 1.2rem; /* Usando rem para fonte */
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .product .toggleable_tabs {
@@ -292,7 +299,7 @@ header {
   padding: 1rem 2rem; /* Usando rem para padding */
   border: none;
   font-weight: bold;
-  font-size: 1rem; /* Usando rem para fonte */
+  font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1920 - 1024)));
   background-color: transparent;
   transition: color 0.2s;
 }
@@ -331,7 +338,7 @@ header {
 }
 
 .product .toggleable_tabs .contentbox .content .card .title h3 {
-  font-size: 2rem; /* Ajuste da fonte com rem */
+  font-size: calc(24px + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 2.3rem;
 }
 
@@ -361,7 +368,6 @@ header {
   display: flex;
 }
 
-
 .features {
   display: flex;
   align-items: center;
@@ -384,7 +390,7 @@ header {
   letter-spacing: 1.5px;
 }
 .features .container .header h2 {
-  font-size: 3rem;
+  font-size: calc(32px + (48 - 32) * ((100vw - 1024px) / (1920 - 1024)));
   margin-block: 25px;
 }
 .features .container .header h2 span {
@@ -393,11 +399,11 @@ header {
 .features .container .header p {
   color: #737373;
   line-height: 1.8rem;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .features .container .left ul {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .features .container .left ul li {
   margin-top: 50px;
@@ -484,7 +490,7 @@ header {
 .features-cont .header p {
   color: #737373;
   line-height: 1.8rem;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .features-cont .right {
   color: #ffffff;
@@ -495,7 +501,8 @@ header {
 .features-cont .right button {
   margin-top: 40px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   border: none;
   border-radius: 5px;
   background-color: #4285f4;
@@ -534,7 +541,7 @@ header {
 .whyus .header p {
   color: #737373;
   line-height: 1.8rem;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .whyus .cardbox {
   margin-top: 70px;
@@ -565,7 +572,7 @@ header {
   height: 32px;
 }
 .whyus .cardbox .card h3 {
-  font-size: 1.5rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
   margin-block: 30px 10px;
 }
 .whyus .cardbox .card p {
@@ -579,7 +586,8 @@ header {
 }
 .testi .header {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   font-weight: bold;
 }
 .testi .header .logos {
@@ -615,7 +623,7 @@ header {
   transition: left 1s ease;
 }
 .testi .content .carouselbox .carousel .name {
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .testi .content .carouselbox .carousel .job {
   margin-block: 10px 30px;
@@ -630,7 +638,9 @@ header {
 }
 .testi .content .carouselbox .carousel .testimonies {
   margin-block: 20px 30px;
-  font-size: 1.5rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   line-height: 2rem;
 }
 .testi .content .carouselbox .child1 {
@@ -668,7 +678,7 @@ header {
 .faq .header p {
   color: #737373;
   line-height: 1.8rem;
-  font-size: 1.2rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .faq .header {
   margin-bottom: 60px;
@@ -703,7 +713,8 @@ header {
   padding: 32px;
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: calc(18px + (24 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   position: relative;
   z-index: 6;
 }
@@ -731,7 +742,8 @@ header {
   padding: 32px;
   padding-top: 0;
   line-height: 2rem;
-  font-size: 1.3rem;
+  font-size: calc(24px + (30 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+
   color: #737373;
   position: absolute;
   top: 100px;
@@ -764,12 +776,13 @@ header {
   padding: 80px;
 }
 .cta .box .left h2 {
-  font-size: 3rem;
+  font-size: calc(32px + (48 - 32) * ((100vw - 1024px) / (1920 - 1024)));
 }
 .cta .box .left button {
   margin-top: 40px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: calc(24px + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+
   border: none;
   border-radius: 5px;
   background-color: #4285f4;
@@ -842,7 +855,8 @@ footer .copyright .other a {
   color: #737373;
 }
 footer .copyright form input {
-  font-size: 1.1rem;
+  font-size: calc(18px + (28 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+
   border: none;
   border-radius: 5px;
   height: 48px;
@@ -856,7 +870,8 @@ footer .copyright form input:focus {
 footer .copyright form button {
   margin-top: inherit;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: calc(24px + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+
   border: none;
   border-radius: 5px;
   background-color: #4285f4;
@@ -910,19 +925,19 @@ article {
   }
 
   .title {
-    font-size: 2.5rem !important;
+    font-size: calc(32px + (48 - 32) * ((100vw - 1024px) / (1920 - 1024)));
   }
 
   .subtitle {
-    font-size: 16px !important;
+    font-size: calc(16px + (24 - 16) * ((100vw - 1024px) / (1920 - 1024)));
   }
 
   .subtitle1 {
-    font-size: 14px !important;
+    font-size: calc(10px + (14 - 10) * ((100vw - 1024px) / (1920 - 1024)));
   }
 
   .subtitle2 {
-    font-size: 1rem !important;
+    font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1920 - 1024)));
     margin-bottom: 24px !important;
   }
 
@@ -1009,7 +1024,7 @@ article {
   .contentbox .card p {
     line-height: unset !important;
     margin: unset !important;
-    font-size: 16px;
+    font-size: calc(12px + (16 - 12) * ((100vw - 1024px) / (1920 - 1024)));
   }
 
   .contentbox .card .images {
