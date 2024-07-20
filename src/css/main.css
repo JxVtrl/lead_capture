@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+
+
 header {
   width: 100%;
   position: fixed;
@@ -836,11 +839,12 @@ footer .copyright form button:hover {
     "Lucida Sans", Arial, sans-serif;
 } /*# sourceMappingURL=main.css.map */
 
+body {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
 @media (max-width: 1024px) {
-  body {
-    position: relative;
-    width: 100vw;
-  }
 
   header {
     width: 100vw !important;
