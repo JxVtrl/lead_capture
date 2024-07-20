@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  width: 75vw;
   padding: 20px;
   box-sizing: border-box;
   margin: 0 5vw;
@@ -114,7 +114,7 @@ header {
 .hero .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 1180px;
+  width: 75vw;
   gap: 5vw;
 }
 
@@ -175,6 +175,11 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.hero .container .right form .identity .input {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero .container .right form .identity .input input {
