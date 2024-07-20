@@ -101,9 +101,11 @@ header.header-hidden {
   color: white;
 }
 .hero .container {
-  display: flex;
-  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 1180px;
+  gap: 5vw;
+
 }
 .hero .container .left .subtitle1 {
   background-color: rgba(128, 128, 128, 0.15);
