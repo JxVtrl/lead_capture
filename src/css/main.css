@@ -232,116 +232,140 @@ header {
 }
 
 .product {
-  width: 1180px;
-  height: 110vh;
+  width: 90vw; /* Ajusta a largura para 90% da largura da viewport */
+  max-width: 1180px; /* Define a largura máxima */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-inline: auto;
+  padding: 5vh 0; /* Adiciona espaçamento vertical responsivo */
 }
+
 .product .header {
   text-align: center;
 }
+
 .product .header sub {
   border-left: 2px solid #4285f4;
-  padding: 3px 10px;
-  letter-spacing: 1.5px;
+  padding: 0.5rem 1rem; /* Usa unidades de rem para responsividade */
+  letter-spacing: 0.1rem;
 }
+
 .product .header h2 {
-  font-size: 3rem;
-  margin-block: 25px;
+  font-size: 3rem; /* Ajuste em relação à viewport */
+  margin: 2rem 0; /* Usando rem para margem */
 }
+
 .product .header h2 span {
   color: #1f6df1;
 }
+
 .product .header p {
   color: #737373;
-  line-height: 1.8rem;
-  font-size: 1.2rem;
+  line-height: 1.8;
+  font-size: 1.2rem; /* Usando rem para fonte */
 }
+
 .product .toggleable_tabs {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .product .toggleable_tabs .tabbox {
   background-color: #f0f7fe;
-  padding: 10px;
-  margin-block: 50px;
-  border-radius: 40px;
+  padding: 1rem; /* Usando rem para espaçamento */
+  margin: 3rem 0; /* Ajuste vertical com rem */
+  border-radius: 2rem; /* Ajuste com rem */
   display: flex;
-  gap: 15px;
+  gap: 1rem; /* Usando rem para espaçamento */
 }
+
 .product .toggleable_tabs .tabbox .tab {
-  border-radius: 40px;
-  padding: 15px;
+  border-radius: 2rem; /* Ajuste com rem */
+  padding: 1rem 2rem; /* Usando rem para padding */
   border: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Usando rem para fonte */
   background-color: transparent;
-  transition-duration: 0.2s;
+  transition: color 0.2s;
 }
+
 .product .toggleable_tabs .tabbox .tab:hover {
   color: #4285f4;
   cursor: pointer;
 }
+
 .product .toggleable_tabs .tabbox .active-tab {
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
   background-color: white;
   color: #4285f4;
 }
+
 .product .toggleable_tabs .contentbox .content {
   display: none;
-  gap: 30px;
+  gap: 2rem; /* Usando rem para espaçamento entre itens */
 }
+
 .product .toggleable_tabs .contentbox .content .card {
-  width: 50%;
-  border-radius: 15px;
+  width: 90%; /* Ajusta a largura para 90% do contêiner pai */
+  max-width: 600px; /* Define a largura máxima */
+  border-radius: 1rem; /* Ajuste com rem */
   background-color: #f0f7fe;
-  padding: 60px 30px;
+  padding: 2rem; /* Usando rem para padding */
   box-sizing: border-box;
   text-align: center;
-  height: 440px;
+  height: auto; /* Ajusta a altura automaticamente */
+  min-height: 25vh; /* Define uma altura mínima relativa à viewport */
   overflow: hidden;
 }
+
 .product .toggleable_tabs .contentbox .content .card .title {
-  padding-inline: 100px;
+  padding-inline: 2rem; /* Usando rem para padding lateral */
 }
+
 .product .toggleable_tabs .contentbox .content .card .title h3 {
-  font-size: 2rem;
+  font-size: 2rem; /* Ajuste da fonte com rem */
   line-height: 2.3rem;
 }
+
 .product .toggleable_tabs .contentbox .content .card .title p {
   color: #737373;
-  margin-block: 20px 50px;
-  line-height: 1.4rem;
+  margin: 1rem 2.5rem; /* Usando rem para margem vertical e horizontal */
+  line-height: 1.4;
 }
+
 .product .toggleable_tabs .contentbox .content .card .images {
   display: flex;
-  gap: 20px;
+  gap: 1rem; /* Usando rem para espaçamento */
   justify-content: center;
 }
+
 .product .toggleable_tabs .contentbox .content .card .images img {
-  height: 140px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 10rem; /* Usando rem para altura */
+  border-radius: 0.5rem; /* Ajuste com rem */
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
 }
+
 .product .toggleable_tabs .contentbox .content .card .images .lone {
-  height: 200px;
+  height: 15rem; /* Usando rem para altura */
 }
+
 .product .toggleable_tabs .contentbox .active-content {
   display: flex;
 }
 
+
 .features {
-  height: 80vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .features .container {
   display: flex;
-  padding-inline: 350px;
 }
 .features .container * {
   flex: 1;
@@ -389,21 +413,23 @@ header {
   border-radius: 10px;
 }
 .features .container .right img:nth-child(1) {
-  width: 390px;
+  width: 20vw;
+  right: -30%;
+  position: relative;
 }
 .features .container .right img:nth-child(2) {
-  width: 312px;
+  width: 15vw;
   box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -270px;
-  left: -120px;
+  top: -10vh;
+  left: -20vw;
 }
 .features .container .right img:nth-child(3) {
-  width: 72px;
+  width: 4vw;
   box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -530px;
-  left: -330px;
+  top: -30vh;
+  left: -25vw;
 }
 
 .features-cont {
