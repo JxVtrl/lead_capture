@@ -656,7 +656,6 @@ header {
 .faq {
   padding-inline: 350px;
   padding-block: 94px;
-  padding-bottom: 400px;
   background-color: #f0f7fe;
   position: relative;
 }
@@ -703,6 +702,7 @@ header {
   position: relative;
   width: 100%;
   transition-duration: 0.5s;
+  overflow: hidden;
 }
 .faq .faqbox ul li:hover {
   padding-bottom: 90px;
@@ -751,10 +751,7 @@ header {
 }
 
 .cta {
-  height: 611px;
-  margin-top: -305px;
   background-color: #001726;
-  padding-inline: 350px;
   display: flex;
   align-items: center;
 }
