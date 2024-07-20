@@ -1008,13 +1008,13 @@ article {
 
   .features .container .right img:nth-child(2) {
     width: 50vw;
-    top: -200px;
+    top: -32vh;
   }
 
   .features .container .right img:nth-child(3) {
     width: 15vw;
-    top: -400px;
-    left: -265px;
+    top: -50vh;
+    left: -57vw;
   }
 
 
