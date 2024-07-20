@@ -517,8 +517,6 @@ header {
 }
 
 .whyus {
-  margin-inline: 260px;
-  margin-block: 94px;
   padding-block: 80px;
   background-color: #f0f7fe;
   border-radius: 15px;
@@ -693,7 +691,7 @@ header {
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  width: 840px;
+  width: 100%;
   background-color: #f0f7fe;
 }
 .faq .faqbox ul li {
